@@ -46,6 +46,7 @@ header button:hover{
     background-color: rgb(207, 207, 207);
 }
 main{
+    order: 0 ;
     padding: 10px;
     border: 1px solid rgb(129, 129, 129);
     display: flex;
@@ -64,10 +65,71 @@ article{
 main h2{
     text-align: center;
 }
-figure>img{
+main figure>img{
     width: 80vw;
     height: 20vh;
 }
 p{
     width: 100%;
+}
+section{
+    order: 2;
+    padding: 10px;
+    border: 1px solid rgb(129, 129, 129);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+    width: 85vw;
+    
+}
+aside{
+    order: 2;
+    padding: 10px;
+    border: 1px solid rgb(129, 129, 129);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+    width: 85vw;
+    display: none;
+}
+footer{
+    order: 4;
+    padding: 10px;
+    border: 1px solid rgb(129, 129, 129);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+    margin-top: 3vh;
+}
+footer p{
+    
+    text-align: center;
+}
+/* 576 768 926 */
+@media (min-width: 576px){
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        margin: 0 1vw;
+    }
+    aside{
+        display: block;
+    
+    }
+    main article{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    main article h2{
+        flex-basis: 100%;
+    }
+    main figure>img{
+        width: auto;
+        height: auto;
+    }
 }

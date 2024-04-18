@@ -37,6 +37,37 @@ header *{
 header button{
     width: 100px;
     padding: 3px 0px;
-    background-color: rgb(230, 228, 228);
-    color: rgb(138, 134, 134);
+    background-color: rgb(228, 228, 228);
+    color: rgb(192, 192, 192);
+    border-radius: 5px;
+    border:none
+}
+header button:hover{
+    background-color: rgb(207, 207, 207);
+}
+main{
+    padding: 10px;
+    border: 1px solid rgb(129, 129, 129);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+    width: 85vw;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+    width: 85vw;
+}
+main h2{
+    text-align: center;
+}
+figure>img{
+    width: 80vw;
+    height: 20vh;
+}
+p{
+    width: 100%;
 }

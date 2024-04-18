@@ -1,88 +1,27 @@
-body * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	color: hsl(0, 100%, 100%);
+/* najmniejsze header u gory pod nim nav i lista pionowo, potem sa artykuly 1 pod 2, i potem tylko zajawki jedna pod druga i na koncu footer
+potem header u gory pod nim nav ale poziomo w mainie  zdjecie obok p, potem zajawki i na koniec advert i footer
+potem header na lewo h1 po prawej linki pionowo, na lewo jest main 2 artykuly   po prawej adverty tak 60-40 poweidzmt  szerokosciowo zajawki na dole na koniec footer
+ostatnie zmienia sie tylko nav poziomo */
+body{
+    display: flex;
+    justify-content: center;
 }
-.container {
-	max-width: 1200px;
-	margin: auto;
+.container{
+    display: flex;
+    flex-wrap: wrap;
 }
-.container > * {
-	padding: 1em;
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
 }
-.container > header {
-	background-color: hsl(350, 50%, 50%);
-	/* height: 18vh; */
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.container > nav {
-	background-color: hsl(350, 40%, 70%);
-	height: 8vh;
-	padding: 0;
-}
-main {
-	background-color: hsl(350, 60%, 40%);
-}
-.main__section * {
-	background-color: hsl(350, 60%, 40%);
-}
-.main__aside {
-	background-color: hsl(350, 60%, 60%);
-}
-.container > footer {
-	background-color: hsl(350, 50%, 50%);
-	height: 15vh;
-}
-article {
-	padding: 1em;
-}
-article h2 {
-	text-align: center;
-}
-article footer p {
-	text-align: right;
-}
-ul {
-	list-style: none;
-	padding: 0;
-}
-a {
-	display: block;
-	padding: 0.5em 1em;
-	background-color: hsl(0, 100%, 100%);
-	color: hsl(350, 60%, 40%);
-	border: 1px solid hsl(350, 60%, 40%);
-	text-decoration: none;
-	text-align: center;
-}
-a:hover {
-	background-color: hsl(350, 60%, 40%);
-	color: hsl(0, 100%, 100%);
-	border: 1px solid hsl(0, 100%, 100%);
-}
-@media (min-width: 760px){
-	ul {
-		display: flex;
-
-		justify-content: center;
-	}
-	li{
-		flex-basis: 15%;
-		margin: 20px;
-		background-color: black;
-	}
-	h1{
-		text-align: center;
-	}
-	main{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-	main>*{
-		background-color: hsl(350, 88%, 48%);
-		flex-basis: 40%;
-		margin: 40px;
-	}
+header li{
+list-style-type: none;
 }

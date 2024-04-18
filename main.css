@@ -3,11 +3,13 @@ potem header u gory pod nim nav ale poziomo w mainie  zdjecie obok p, potem zaja
 potem header na lewo h1 po prawej linki pionowo, na lewo jest main 2 artykuly   po prawej adverty tak 60-40 poweidzmt  szerokosciowo zajawki na dole na koniec footer
 ostatnie zmienia sie tylko nav poziomo */
 body{
+   
     display: flex;
     justify-content: center;
     margin: 0px;
 }
 .container{
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -130,6 +132,34 @@ footer p{
     }
     main figure>img{
         width: auto;
+        height: auto;
+        margin: 0;padding: 0;
+    }
+    main figure{
+       flex-basis: 25%;
+       margin:0 2vw;
+       padding: 0;
+    }
+    main p{
+       flex-basis: 45%;
+       margin: 0 2vw;
+       padding: 0;
+       display: inline;
+    }
+    aside{
+        display: flex;
+       flex-direction: row;
+
+    }
+    aside article{
+        flex-basis: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    aside img{
+        width: 10vw;
         height: auto;
     }
 }
